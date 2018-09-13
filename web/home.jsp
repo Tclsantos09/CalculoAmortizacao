@@ -28,7 +28,7 @@
         <h4>Amortização Americana</h4>
         <p>Sistema de Amortização Americano é uma forma de pagamento de empréstimos que se caracteriza pelo pagamento apenas dos juros da dívida,deixando o valor da dívida constante, que pode ser paga em apenas um único pagamento.</p><br>
         <h4>Tabela Price</h4>
-        <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais, usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo.</p>
+        <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais, usa o regime de juros compostos para calcular o valor das parcelas de um empréstimo.</p><br>
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
