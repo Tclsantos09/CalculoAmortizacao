@@ -22,12 +22,9 @@
         </form>
         
         
-        <h2>Tabela SAA - Sistema de Amortização Americana</h2><br>
+        
         
         <table>
-            <tr>
-                <th>Mês</th> <th>Valor da Prestação</th> <th>Valor da Amortização</th> <th>Valor do Juros</th> <th> Saldo Devedor</th>
-            </tr>
             <% if(request.getParameter("valorFinaciado") != null){
                 try{
                    
@@ -43,7 +40,15 @@
                     
                     //calculo do saldo devedor
                     double saldoAnterior = valorFinaciado;
-                    out.println("<tr>");
+                        out.println("<h2>Tabela SAA - Sistema de Amortização Americana</h2><br>");
+                        out.println("<tr>");
+                        out.println("<th>Mês</th>");
+                        out.println("<th>Valor da Prestação</th>");
+                        out.println("<th>Valor da Amortização</th>");
+                        out.println("<th>Valor do Juros</th>");
+                        out.println("<th> Saldo Devedor</th>");
+                        out.println("</tr>");
+                        out.println("<tr>");
                         out.println("<td>0</td>");
                         out.println("<td>-</td>");
                         out.println("<td>-</td>");

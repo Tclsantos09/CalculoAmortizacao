@@ -4,6 +4,8 @@
     Author     : thais.lopes
 --%>
 
+<%@page import="java.util.Locale"%>
+<%@page import="java.text.NumberFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,26 +24,9 @@
         </form>
            
         
-        <h2>Tabela SAC - Sistema de Amortização Constante</h2><br>
+        
         <table>
-            <tr>
-                <th>
-                    Período
-                </th>
-                <th>
-                    Valor da Prestação
-                </th>
-                <th>
-                    Valor da Amortização
-                </th>
-                <th>
-                    Valor do Juros
-                </th>
-                <th>
-                    Saldo Devedor
-                </th>
-            </tr>
- <% if(request.getParameter("valorFinaciado") != null){
+            <% if(request.getParameter("valorFinaciado") != null){
                 try{
                    
                     double valorFinaciado = Double.parseDouble(request.getParameter("valorFinaciado"));
@@ -56,12 +41,20 @@
                     
                     //calculo do saldo devedor
                     double saldoAnterior = valorFinaciado;
-                    out.println("<tr>");
+                        out.println("<h2>Tabela SAC - Sistema de Amortização Constante</h2><br>");
+                        out.println("<tr>");
+                        out.println("<th>Período</th>");
+                        out.println("<th>Valor da Prestação</th>");
+                        out.println("<th>Valor da Amortização</th>");
+                        out.println("<th>Valor do Juros</th>");
+                        out.println("<th>Saldo Devedor</th>");
+                        out.println("</tr>");
+                        out.println("<tr>");
                         out.println("<td>0</td>");
                         out.println("<td>-</td>");
                         out.println("<td>-</td>");
                         out.println("<td>-</td>");
-                        out.println("<td>" +valorFinaciado+"</td>");
+                        out.println("<td>" + valorFinaciado + "</td>");
                         out.println("</tr>");
                     for(int i = 0; i < periodoFinanciado; i++){
                         juros = saldoAnterior * (taxaJuros/100);
