@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<img src="" alt="Logo de rodapé Centro PAula Souza">
+<h2>Contato da Equipe no GitHub</h2>
+<a href="https://github.com/Tclsantos09/CalculoAmortizacao">Repositório do Projeto</a> &ensp;
+<a href="https://github.com/deaxavier">Andrea Xavier</a> &ensp;
+<a href="https://github.com/delamano">Arthur de La Mano</a>  &ensp;
+<a href="">Cassiano Lucas Vieira</a>  &ensp;
+<a href="https://github.com/GustavoCarvalhoPessoa">Gustavo Carvalho Pessoa</a>  &ensp;
+<a href="https://github.com/Tclsantos09">Thais do Carmo Lopes dos Santos</a>  &ensp;
+<a href="">Tabela Price</a>
+<hr/>
