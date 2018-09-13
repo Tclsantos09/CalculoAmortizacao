@@ -12,6 +12,7 @@
         <title>Amortização Americana</title>
     </head>
     <body>
+        <%@include file="WEB-INF/jspf/header.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h1>Amortização Americana</h1>
          <form method='get'>
@@ -80,5 +81,6 @@
             }
             %>
         </table>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
