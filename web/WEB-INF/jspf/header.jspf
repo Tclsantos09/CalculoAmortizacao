@@ -1,4 +1,26 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
+<style>
+    #cabeçalho{
+        width: 100%;
+    }
+    #coluna1,#coluna2, #coluna3 {
+        padding-left: 230px;
+        height: 50px;
+        align: center;
+    }
+</style>
 
-<h1>Projeto 02 - JSP</h1>
+<table id="cabecalho">
+    <tr>
+        <td id="coluna1">
+            <img src="imagem/fatec.png"  height="120" width="270" >
+        </td>
+        <td id="coluna2">
+            <h1>Projeto 02 - JSP</h1>
+        </td>
+        <td id="coluna3">
+            <img src="imagem/cps.jpg" height="120" width="120" >
+        </td>
+      </tr>
+</table>
