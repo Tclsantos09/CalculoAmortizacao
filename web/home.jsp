@@ -13,8 +13,8 @@
         <style>
             body{
                 padding-bottom:100px;
-            }
-            
+             }
+             
              h2,h3{
                 text-align: center;
                 font-size: x-large;
@@ -25,7 +25,7 @@
             }
             
             #alinha{
-                width:2000px;
+                width:auto;
                 height:80px;
                 margin:0px auto;
             }
@@ -35,26 +35,30 @@
                 font-style: italic;
                 font-weight: normal;
                 font-size: medium;
-                width:300px;
+                width:265px;
                 height:auto;
                 margin:0;
                 padding:0;
                 display:inline-block;
+                background-color: firebrick;
+                color: white;
             }
             
             #alinha1{
-                width: 1600px;
-                height: 80px;
-                margin: 0px auto;  
+                width: auto;
+                height: auto;
+                margin: 0px auto;
+                align:center;
+                display:inline-block;
+                
             }
             
-            #alinha1 ul{
-                  width:450px;
-                height:auto;
-                margin:0;
-                padding:0;
-                display:inline-block;
+            ul{
+                background-color: #f1f1f1;
+                border-radius: 5%;
+                display: inline-block;
             }
+            
         </style>    
     </head>
     
@@ -69,8 +73,9 @@
         <p> Projeto elaborado para compreenção de aplicação do JSP no desenvolvimento de aplicações voltadas para web.</p>
         <h3>Equipe de desenvolvimento</h3>
         <div id="alinha">
-            <h5>Cassiano Lucas Vieira</h5><h5>Andrea Xavier</h5><h5> Arthur de la mano</h5> <h5>Gustavo carvalho</h5><h5>Thaís Lopes</h5>
+            <h5>Cassiano Lucas Vieira</h5><h5>Andrea Xavier</h5><h5> Arthur de la mano</h5><h5>Gustavo carvalho</h5><h5>Thaís Lopes</h5>
         </div>
+        <h3>Descrição das Aplicações</h3>
         <div id ="alinha1">
             <ul>   
                 <h4>Amortização Constante</h4>

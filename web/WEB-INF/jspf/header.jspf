@@ -5,7 +5,7 @@
         width: 100%;
     }
     #coluna1,#coluna2, #coluna3 {
-        padding-left: 230px;
+        padding-left: 150px;
         height: 50px;
         align: center;
     }

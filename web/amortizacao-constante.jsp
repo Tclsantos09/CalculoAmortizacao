@@ -16,6 +16,10 @@
             body{
                 padding-bottom:100px;
             }
+            h2,h3{
+                text-align: center;
+                font-size: x-large;
+            }
             div:not(header) {
                 table {
                     border-collapse: collapse;
