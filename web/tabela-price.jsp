@@ -29,7 +29,7 @@
     
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Tabela Price</h1>
+        <div style="background-color: #f1f1f1"><h2>Tabela Price</h2></div>
     </body>
     
     <div class="footer">

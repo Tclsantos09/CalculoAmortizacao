@@ -41,7 +41,7 @@
     
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Amortização Constante</h1>
+        <div style="background-color: #f1f1f1"><h2>Amortização Constante</h2></div>
         <form method='get'>
             <input type="number" placeholder="Valor Financiado(R$)" name="valorFinaciado"/>
             <input type="number" placeholder="Período(em meses)" name="periodoFinanciado" min='1'/>

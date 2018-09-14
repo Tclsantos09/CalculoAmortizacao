@@ -68,7 +68,7 @@
     
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Home</h1>
+        <div style="background-color: #f1f1f1"><h2>Home</h2></div>
         <h2> Amortização constante e americana </h2>
         <p> Projeto elaborado para compreenção de aplicação do JSP no desenvolvimento de aplicações voltadas para web.</p>
         <h3>Equipe de desenvolvimento</h3>
