@@ -1,22 +1,47 @@
 <%-- any content can be specified here e.g.: --%>
-<%@ page pageEncoding="UTF-8" %>
-<style>
-    .footer {
-    background: #f1f1f1;
-    position: fixed;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:auto;
-}
-</style>
-<h2 align="center">Contato da Equipe no GitHub</h2>
-<div align="center">
-    <a href="https://github.com/Tclsantos09/CalculoAmortizacao">RepositÃ³rio do Projeto</a> &ensp;
-    <a href="https://github.com/deaxavier">Andrea Xavier</a> &ensp;
-    <a href="https://github.com/delamano">Arthur de La Mano</a>  &ensp;
-    <a href="">Cassiano Lucas Vieira</a>  &ensp;
-    <a href="https://github.com/GustavoCarvalhoPessoa">Gustavo Carvalho Pessoa</a>  &ensp;
-    <a href="https://github.com/Tclsantos09">Thais do Carmo Lopes dos Santos</a>  &ensp;
-</div>
-<hr/>
+
+<footer class="bg-dark py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center text-white pb-2">
+                <p class="h3">Equipe GitHub</p>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Contatos
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title " id="exampleModalCenterTitle">
+                        <a class="color-modal" href="https://github.com/Tclsantos09/CalculoAmortizacao" target="_blank">Repositório do Projeto</a>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="h5">
+
+                        <a href="https://github.com/deaxavier">Andrea Xavier</a> <br>
+                        <a href="https://github.com/delamano">Arthur de la Mano</a>  <br>
+                        <a href="">Cassiano Lucas Vieira</a>  <br>
+                        <a href="https://github.com/GustavoCarvalhoPessoa">Gustavo Carvalho Pessoa</a>  <br>
+                        <a href="https://github.com/Tclsantos09">Thais do Carmo Lopes dos Santos</a>  <br>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

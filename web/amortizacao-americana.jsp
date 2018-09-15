@@ -4,49 +4,36 @@
     Author     : thais.lopes
 --%>
 <%@page import="java.text.DecimalFormat"%>
+
+<%@page import="java.util.Locale"%>
+<%@page import="java.text.NumberFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Amortização Americana</title>
-        <style>
-            
-            body{
-                padding-bottom:100px;
-            }
-            h2,h3{
-                text-align: center;
-                font-size: x-large;
-            }
-            div:not(header) {
-                table {
-                    border-collapse: collapse;
-                }
-
-                table, th, td {
-                    border: 1px solid black;
-                }
-                th, td {
-                    text-align: center;
-                }
-            }
-        </style>
+        <%@include file="WEB-INF/jspf/head.jspf"%> 
+        
     </head>
-    
-    <div class="header">
-        <%@include file="WEB-INF/jspf/header.jspf" %>
-    </div>
-    
+       
     <body>
+        <%@include file="WEB-INF/jspf/header.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <div style="background-color: #f1f1f1"><h2>Amortização Americana</h2></div>
-         <form method='get'>
-            <input type="number" placeholder="Valor Financiado(R$)" name="valorFinaciado"/>
-            <input type="number" placeholder="Período(em meses)" name="periodoFinanciado" min='1'/>
-            <input type="number" placeholder="Taxa de Juros(%)" name="taxaJuros"/>
-            <input type="submit" value="Calcular"/><br>
-        </form>
+        <section class="pt-3 pb-5 ">
+            <div class="container py-5" style="height:400px">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center pb-3">
+                        <h2> Amortização Americana </h2>
+                        <p class="text-muted"> Projeto elaborado para compreensão de aplicação do JSP no desenvolvimento de aplicações voltadas para web.</p>
+                    </div> 
+                    <div class="pb-5">
+                            <form method='get'>
+                               <input type="number" placeholder="Valor Financiado(R$)" name="valorFinaciado"/>
+                               <input type="number" placeholder="Período(em meses)" name="periodoFinanciado" min='1'/>
+                               <input type="number" placeholder="Taxa de Juros(%)" name="taxaJuros"/>
+                               <input type="submit" value="Calcular"/><br>
+                           </form>
+                    </div>
         <table>
             <% if(request.getParameter("valorFinaciado") != null){
                 try{
@@ -127,7 +114,10 @@
                 }
             }
             %>
-        </table><br>
+        </table><br>     
+                </div>
+            </div>
+         </section>
     </body>
     
     <div class="footer">
