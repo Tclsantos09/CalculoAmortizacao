@@ -67,7 +67,7 @@
                         out.println("<td>" +valorFinaciado+"</td>");
                         out.println("</tr>");
                     
-                    for(int i = 1;i<= periodoFinanciado;i++){
+                    for(int i = 1;i< periodoFinanciado;i++){
                         
                         DecimalFormat nm = new DecimalFormat("0.##");
                         String numero = nm.format(i);
